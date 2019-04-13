@@ -3,7 +3,7 @@
 /********************************************************************************************
  *                                                                                          *
  * Plese read the following tutorial before implementing tasks:                             *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String  *
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String     *
  *                                                                                          *
  ********************************************************************************************/
 
@@ -74,7 +74,6 @@ function extractNameFromTemplate(value) {
     return (arr[1] + " " + arr[2]);
 }
 
-
 /**
  * Returns a first char of the given string.
  *
@@ -137,7 +136,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-    throw new Error('Not implemented');
+    return str.replace(value, "");
 }
 
 /**
