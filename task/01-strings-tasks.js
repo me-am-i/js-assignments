@@ -181,7 +181,7 @@ function convertToUpperCase(str) {
  *   'info@gmail.com' => ['info@gmail.com']
  */
 function extractEmails(str) {
-    throw new Error('Not implemented');
+    return str.split(";");
 }
 
 /**
@@ -245,7 +245,13 @@ function encodeToRot13(str) {
  *   isString(new String('test')) => true
  */
 function isString(value) {
-    throw new Error('Not implemented');
+    if (typeof value == "string") {
+            return true;
+        }
+    else if (typeof value == "object") {
+            return value instanceof String;
+        }
+   return false;
 }
 
 
