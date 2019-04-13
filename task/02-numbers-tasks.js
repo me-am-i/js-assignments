@@ -3,9 +3,9 @@
 /********************************************************************************************
  *                                                                                          *
  * Plese read the following tutorial before implementing tasks:                             *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates          *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number  *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math    *
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates          *
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number  *
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math    *
  *                                                                                          *
  ********************************************************************************************/
 
@@ -128,7 +128,7 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  *     0     => 0
  */
 function getLastDigit(value) {
-    throw new Error('Not implemented');
+    return (value.toString()[value.toString().length-1]);
 }
 
 
@@ -144,7 +144,7 @@ function getLastDigit(value) {
  * '-525.5'     => -525.5
  */
 function parseNumberFromString(value) {
-    throw new Error('Not implemented');
+    return (parseFloat(value));
 }
 
 /**
