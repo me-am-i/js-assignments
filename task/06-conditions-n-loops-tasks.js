@@ -90,7 +90,8 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,10,10 =>  true
  */
 function isTriangle(a,b,c) {
-    throw new Error('Not implemented');
+    if((a + b > c) && (a + c > b) && (b + c > a)) return true;
+    return false;
 }
 
 
@@ -200,7 +201,10 @@ function findFirstSingleChar(str) {
  *
  */
 function getIntervalString(a, b, isStartIncluded, isEndIncluded) {
-    throw new Error('Not implemented');
+    let sorted = [a, b].sort(function (a, b) {
+        return a - b;
+    });
+    return (isStartIncluded ? "[" : "(") + sorted[0] + ", " + sorted[1] + (isEndIncluded ? "]" : ")");
 }
 
 
