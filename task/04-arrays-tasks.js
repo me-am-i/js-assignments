@@ -58,7 +58,7 @@ function generateOdds(len) {
  *    [] => [] 
  */
 function doubleArray(arr) {
-   throw new Error('Not implemented');
+   return arr.concat(arr.slice());
 }
 
 
@@ -74,7 +74,11 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+   let result = arr.filter(postive);
+      function postive(item) {
+      return item > 0;
+   }
+  return result;
 }
 
 /**
@@ -89,7 +93,11 @@ function getArrayOfPositives(arr) {
  *    [ 'cat, 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
  */
 function getArrayOfStrings(arr) {
-   throw new Error('Not implemented');
+  let filtered = arr.filter(isString);
+  function isString(item) {
+   if(typeof item == "string") return item;
+}
+  return filtered;
 }
 
 /**
@@ -106,7 +114,11 @@ function getArrayOfStrings(arr) {
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
 function removeFalsyValues(arr) {
-   throw new Error('Not implemented');
+   let filtered = arr.filter(check);
+   function check(item) {
+      if (item) return item;
+  }
+  return filtered;
 }
 
 /**
@@ -225,7 +237,10 @@ function toCsvText(arr) {
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
 function toArrayOfSquares(arr) {
-   throw new Error('Not implemented');
+   let result = arr.map(function(n) {
+      return Math.pow(n,2);
+   });
+   return result;
 }
 
 
@@ -244,7 +259,11 @@ function toArrayOfSquares(arr) {
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
 function getMovingSum(arr) {
-   throw new Error('Not implemented');
+   let sum = 0;
+   let result = arr.map(function(item){
+        return sum = sum + item;
+    });
+    return result;
 }
 
 /**
