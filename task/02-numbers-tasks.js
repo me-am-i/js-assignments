@@ -112,7 +112,7 @@ function getLinearEquationRoot(a, b) {
  *   (0,1) (1,2)     => 0
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
-    throw new Error('Not implemented');
+    return Math.acos(x1 * x2 + y1 * y2 - (Math.sqrt(x1 * y1) + Math.sqrt(x2 *y2)));
 }
 
 /**
@@ -161,7 +161,7 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelipidedDiagonal(a,b,c) {
-    throw new Error('Not implemented');
+    return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
 }
 
 /**
@@ -203,7 +203,10 @@ function roundToPowerOfTen(num, pow) {
  *   17 => true
  */
 function isPrime(n) {
-    throw new Error('Not implemented');
+    for (let i = 2; i < n/2 + 1; i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
 }
 
 /**
@@ -222,7 +225,8 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-    throw new Error('Not implemented');
+    if (typeof +value == 'number' && !isNaN(+value)) {return +value;}
+        return def;
 }
 
 module.exports = {
