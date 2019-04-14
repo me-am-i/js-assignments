@@ -3,8 +3,8 @@
 /********************************************************************************************
  *                                                                                          *
  * Plese read the following tutorial before implementing tasks:                             *
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates#Date_object
- * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date    *
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates#Date_object
+ * https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date    *
  *                                                                                          *
  ********************************************************************************************/
 
