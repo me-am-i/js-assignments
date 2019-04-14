@@ -374,7 +374,10 @@ function sortDigitNamesByNumericOrder(arr) {
  *   [ 1, 10, 100, 1000 ]  => 1111
  */
 function getItemsSum(arr) {
-   throw new Error('Not implemented');
+   let result = arr.reduce(function(a,b) {
+        return a + b;
+    }, 0);
+    return result;
 }
  
 /** 
@@ -390,7 +393,10 @@ function getItemsSum(arr) {
  *  [ null, undefined, NaN, false, 0, '' ]  => 6
  */
 function getFalsyValuesCount(arr) {
-   throw new Error('Not implemented');
+   let result = arr.filter(function(num) {
+      if (num) return num;
+  });
+  return arr.length - result.length;
 }
 
 /**
@@ -573,7 +579,11 @@ function selectMany(arr, childrenSelector) {
  *   [[[ 1, 2, 3]]], [ 0, 0, 1 ]      => 2        (arr[0][0][1])
  */
 function getElementByIndexes(arr, indexes) {
-    throw new Error('Not implemented');
+   let result = indexes.reduce(function(prev, cur){
+      if (prev == undefined) return arr[cur];
+      return prev[cur];
+  }, undefined);
+  return result;
 }
 
 
